@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+
+<h1>Katalog Produk</h1>
+<p>Berikut daftar produk yang tersedia:</p>
+<ul>
+    <li>Produk A</li>
+    <li>Produk B</li>
+    <li>Produk C</li>
+    <div class="card" style="margin-top: 2rem;">
+<h2>Form Tambah Produk</h2>
+<!-- Formulir mengirim data melalui metode HTTP POST -->
+<form action="/katalog/tambah" method="POST">
+<div style="margin-bottom: 1rem;">
+<label for="namaProduk">Nama Produk:</label><br>
+<!-- Atribut 'name' adalah kunci penting untuk dibaca di Back-End -->
+<input type="text" id="namaProduk" name="namaProduk" required>
+</div>
+<button type="submit">Kirim Payload</button>
+</form> 
+</div>
+</ul>
+
+<%- include('../partials/footer') %>

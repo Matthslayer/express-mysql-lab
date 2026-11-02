@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+
+<h1>Selamat datang, <%= userName %></h1>
+<ul>
+    <% fiturList.forEach(fitur => { %>
+        <li><%= fitur %></li>
+    <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>
